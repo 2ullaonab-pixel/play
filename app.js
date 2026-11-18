@@ -75,7 +75,8 @@ if (typeof document !== 'undefined') {
       document.body.removeChild(t);
     }
 
-    var id = fileIdFrom(new URLSearchParams(location.search).get('id'));
+    // 영상별 페이지(v/<ID>/)는 window.PLAY_ID 로 ID를 넘긴다. 주소의 ?id= 도 그대로 받는다.
+    var id = fileIdFrom(window.PLAY_ID || new URLSearchParams(location.search).get('id'));
     var $ = function (sel) { return document.querySelector(sel); };
 
     if (id) {
