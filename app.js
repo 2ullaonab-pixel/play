@@ -1,5 +1,6 @@
 // 카톡 안 브라우저에서 구글 드라이브 영상 링크를 바깥 브라우저(또는 드라이브 앱)로 넘긴다.
-// 이 페이지는 drive.google.com/file/d/<ID>/view 로만 보낸다. 다른 주소로는 보내지 않는다.
+// 이 페이지는 drive.google.com/file/d/<ID>/preview 로만 보낸다. 다른 주소로는 보내지 않는다.
+// /view 는 휴대폰에서 "동영상을 재생하는 중에 문제가 발생했습니다"로 막혀서(2026-11-18) /preview 로 바꿨다.
 
 var BASE = 'https://2ullaonab-pixel.github.io/play/';
 
@@ -13,7 +14,7 @@ function fileIdFrom(text) {
 }
 
 function driveUrl(id) {
-  return 'https://drive.google.com/file/d/' + id + '/view';
+  return 'https://drive.google.com/file/d/' + id + '/preview';
 }
 
 function plan(ua, target) {

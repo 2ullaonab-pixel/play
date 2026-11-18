@@ -5,6 +5,6 @@
 
 - 링크 만들기: https://2ullaonab-pixel.github.io/play/ 에 드라이브 영상 주소를 붙여 넣습니다.
 - 링크 모양: `https://2ullaonab-pixel.github.io/play/?id=<드라이브 파일 ID>`
-- 이 페이지는 `drive.google.com/file/d/<ID>/view` 로만 보냅니다.
+- 이 페이지는 `drive.google.com/file/d/<ID>/preview` 로만 보냅니다. 휴대폰에서 `/view` 주소는 "동영상을 재생하는 중에 문제가 발생했습니다"로 막히는 일이 있어서 미리보기 주소를 씁니다.
 - 카톡이 공식으로 지원하는 기능이 아니라서 휴대폰에 따라 자동으로 넘어가지 않을 수 있습니다.
   그때는 화면의 "영상 열기" 버튼이나 안내대로 "다른 브라우저로 열기"를 씁니다.
